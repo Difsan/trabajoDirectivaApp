@@ -11,6 +11,17 @@ export class AppComponent {
   registrado: boolean=false;
   nombre:string="";
   apellido: string= "";
+  cargo:string="";
+  entradas: string[];
+
+  constructor(){
+    this.entradas=[
+      'Python cada dia mas presente',
+      "Java cada dia mas presente",
+      "C++ cada dia mas presente",
+      "Typescript cada dia mas presente",
+    ]
+  }
 
   registrarUsuario(): void{
     this.registrado= true;
